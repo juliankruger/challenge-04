@@ -1,0 +1,35 @@
+@use "variables";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0;
+  gap: 0.5em;
+  color: variables.$primary-very-dark-cyan;
+  background-color: variables.$very-light-gray;
+  font-family: variables.$primary-font;
+  font-size: 0.8rem;
+  white-space: nowrap;
+
+  &__link,
+  &__link:visited {
+    color: variables.$primary-dark-cyan;
+  }
+
+  &__link:hover,
+  &__link:focus,
+  &__link:active {
+    text-decoration: none;
+    opacity: 0.7;
+  }
+}
+
+@media (min-width: 800px) {
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

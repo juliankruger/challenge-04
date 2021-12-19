@@ -1,0 +1,70 @@
+@use "variables";
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  max-width: 950px;
+  margin: 2em 1em 5em;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: variables.$primary-very-dark-cyan;
+
+  & article:nth-of-type(1) {
+    background-color: variables.$primary-bright-orange;
+    color: variables.$primary-bright-orange;
+  }
+  & article:nth-of-type(2) {
+    background-color: variables.$primary-dark-cyan;
+    color: variables.$primary-dark-cyan;
+  }
+  & article:nth-of-type(3) {
+    background-color: variables.$primary-very-dark-cyan;
+    color: variables.$primary-very-dark-cyan;
+  }
+
+  &__col {
+    padding: 3em 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__heading {
+      font-family: variables.$secondary-font;
+      font-size: 2.5em;
+      text-transform: uppercase;
+      color: variables.$very-light-gray;
+      padding: 1em 0;
+    }
+
+    &__text {
+      font-family: variables.$primary-font;
+      font-size: 1em;
+      color: variables.$neutral-transparent-white;
+      line-height: 1.5em;
+      letter-spacing: 1px;
+    }
+
+    &__link {
+      position: relative;
+      padding: 1em 2em;
+      margin: min(6em, 8vw) 0 0 0;
+      font-family: variables.$primary-font;
+      text-decoration: none;
+      color: inherit;
+      background-color: variables.$very-light-gray;
+      border-radius: 2em;
+      border: 2px solid variables.$very-light-gray;
+
+      &:visited {
+        color: inherit;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: inherit;
+        color: variables.$very-light-gray;
+      }
+    }
+  }
+}
