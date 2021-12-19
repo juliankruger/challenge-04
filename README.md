@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL on Frontend Mentor]()
+- [Solution URL on Frontend Mentor](https://www.frontendmentor.io/solutions/3column-preview-card-using-flexbox-and-grid-without-media-queries-FAJTIAhRY)
 - [Live Site Solution](https://fm-challenge04.netlify.app/)
 
 ## My process
